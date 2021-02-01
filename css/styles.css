@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+@media (max-width: 800px) {
+    .row {
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 655px) {
+    .row {
+        justify-content: center;
+    }
+}
+.col {
+    width: 301px;
+    height: 518px;
+    /*border-color: darkgray; !* Цвет границы *!*/
+    /*border-style: initial; !* Стиль границы *!*/
+    border: 1px solid darkgray
+}
+.padding{
+    padding: 20px 20px 0 20px;
+}
+.title {
+    font-weight: 400;
+    font-size: larger;
+}
+.button{
+    background-color: #007bff;
+    height: 40px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
